@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet of Things</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Internet of Things</h1>
+            <p>Explore the future of connectivity and automation.</p>
+            <h2>Pengertian Internet of Things</h2>
+            <p>
+                Internet of Things (IoT) adalah konsep yang menghubungkan perangkat sebagai media komunikasi berbasis internet. IoT memungkinkan user untuk saling terhubung, mencari, mengolah, dan mengirimkan informasi secara otomatis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cara Kerja IoT -->
+    <section class="CaraKerja">
+        <div class="container">
+            <h2>Cara Kerja IoT</h2>
+            <p>
+                IoT bekerja dengan menghubungkan perangkat melalui sensor, gateway, dan cloud. Sensor mengumpulkan data, gateway mentransmisikan data ke cloud, dan cloud memungkinkan user mengakses data untuk mengontrol perangkat.
+            </p>
+        </div>
+    </section>
+
+    <!-- Keuntungan IoT -->
+    <section class="KeuntunganIoT">
+        <div class="container">
+            <h2>Keuntungan Menggunakan IoT</h2>
+            <ul>
+                <li>
+                    <h3>Efisiensi Energi</h3>
+                    <p>IoT membantu mengontrol penggunaan energi secara optimal, sehingga efisiensi meningkat.</p>
+                </li>
+                <li>
+                    <h3>Hemat Biaya</h3>
+                    <p>IoT dapat mengurangi biaya operasional dengan analisis data real-time dan pemantauan perangkat.</p>
+                </li>
+                <li>
+                    <h3>Produktivitas Meningkat</h3>
+                    <p>Keputusan berbasis data IoT membantu meningkatkan produktivitas baik untuk individu maupun perusahaan.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tantangan IoT -->
+    <section class="TantanganIoT">
+        <div class="container">
+            <h2>Tantangan IoT</h2>
+            <ul>
+                <li>
+                    <h3>Keamanan Data</h3>
+                    <p>IoT membutuhkan sistem keamanan yang kuat untuk melindungi privasi pengguna.</p>
+                </li>
+                <li>
+                    <h3>Regulasi Rendah</h3>
+                    <p>Kurangnya regulasi teknologi IoT di beberapa negara dapat menghambat adopsi.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery IoT</h2>
+            <div class="gallery-grid">
+                <img src="images/gambar 1.jpg" alt="IoT Image 1">
+                <img src="images/gambar 2.jpg" alt="IoT Image 2">
+                <img src="images/gambar 3.jpg" alt="IoT Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-info">
+                <p><strong>Alamat:</strong> Jalan J Buntu, Tebet, Jakarta Selatan</p>
+                <p><strong>Telepon:</strong> +62 87781648693</p>
+                <p><strong>Email:</strong> oktafianaramadhania@gmail.com</p>
+            </div>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Nama Anda" required />
+                <input type="email" name="email" placeholder="Email Anda" required />
+                <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created By Oktafiana Zasqya Ramadhania - 241011700479</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Pesan Anda telah dikirim!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
